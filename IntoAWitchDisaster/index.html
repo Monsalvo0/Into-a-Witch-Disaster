@@ -7,7 +7,21 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <canvas class="webgl"></canvas>
-    <script type="module" src="./script.js"></script>
+  <div id="instructions" style="position:fixed;top:0;left:0;width:100vw;height:100vh;z-index:10;background:rgba(34,28,105,0.75);color:white;display:flex;align-items:center;justify-content:center;flex-direction:column;font-size:1.5rem;transition:opacity 0.5s;">
+    <div>
+      <h2>Instrucciones</h2>
+      <ul>
+        <li>Haz click en el caldero para enfocar la cámara en él.</li>
+        <li>Haz click en el libro para enfocar la cámara en el libro.</li>
+        <li>Haz click en el librero para enfocar la cámara en el librero.</li>
+        <li>Haz click fuera de los objetos para regresar a la vista general.</li>
+        <li>Puedes usar el botón de cámara para probar las vistas.</li>
+        <li>¡Disfruta el recorrido!</li>
+      </ul>
+      <p style="margin-top:2rem;font-size:1rem;">Enter para continuar</p>
+    </div>
+  </div>
+  <canvas class="webgl"></canvas>
+  <script type="module" src="./script.js"></script>
 </body>
 </html>
